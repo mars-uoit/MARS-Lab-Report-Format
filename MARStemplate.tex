@@ -1,0 +1,130 @@
+\documentclass[12pt, titlepage]{MARSarticle}
+
+
+\renewcommand{\rmdefault}{phv}
+
+% ---------------------------------------------------------------------------- %
+% Set the title, author, and date
+%
+    \title{TITLE OF REPORT}
+    \author{Scott Nokleby}		
+    \date{}		% Leave this here but empty
+
+
+% ---------------------------------------------------------------------------- %
+% These are mandatory
+%
+\MARSnum{2006-001}		% e.g. \MARSnum{MARS2006-0420}
+\MARSprintDate{Decemeber 2006}
+\MARSauthor{Scott Nokleby}		% One line, separated by commas
+\MARSreportType{CONFIDENTIAL}
+
+
+
+% ---------------------------------------------------------------------------- %
+% Start the document
+%
+
+\begin{document}
+\maketitle    
+
+    % ------------------------------------------------------------------------ %
+    % An Abstract is required for MARS reports
+    %
+    \begin{abstract}
+ADD ABSTRACT HERE
+    \end{abstract}
+
+
+    % ------------------------------------------------------------------------ %
+    % An Acknowledgment section is optional but important
+    %
+    \clearpage
+    %\chapter*{Acknowledgment}
+
+
+    % ------------------------------------------------------------------------ %
+    % The table of contents and list of figures and tables
+    %
+%    \cleardoublepage		% TOC needs to start on an odd page
+%    \tableofcontents
+%    \listoffigures
+%    \listoftables
+
+
+    % ---------------------------------------------------------------------- %
+    % An optional preface or Foreword
+%    \clearpage
+    %\chapter*{Preface}
+%    \addcontentsline{toc}{chapter}{Preface}
+
+
+    % ---------------------------------------------------------------------- %
+    % An optional executive summary
+ %   \clearpage
+    %\chapter*{Summary}
+  %  \addcontentsline{toc}{chapter}{Summary}
+
+
+    % ---------------------------------------------------------------------- %
+    % An optional glossary. We don't want it to be numbered
+ %   \clearpage
+    %\chapter*{Nomenclature}
+%    \addcontentsline{toc}{chapter}{Nomenclature}
+%    \begin{description}
+%	\item[Term 1]
+%	    Description
+%	\item[Term 2]
+%	    Description
+%	\item[Term 3]
+%	    Description
+%    \end{description}
+
+
+    % ---------------------------------------------------------------------- %
+    % This is where the body of the report begins; usually with an Introduction
+    %
+ %   \MARSmain		% Start the main part of the report
+
+    %\chapter{Introduction}\label{Intro}
+
+\section{Introduction}
+\section{Section One}
+\section{Section Two}
+\section{Conclusion}
+
+	\begin{table}[ht]
+	    \centering
+	    \caption[Short Title]{Full caption}
+	    \bigskip
+
+	    \begin{tabular}{|l|c|l|c|}
+	    \end{tabular}
+	    \label{tab:1}
+	\end{table}
+	
+
+
+
+    % ---------------------------------------------------------------------- %
+    % References
+    %
+    \clearpage
+    % If hyperref is included, then \phantomsection is already defined.
+    % If not, we need to define it.
+    \providecommand*{\phantomsection}{}
+    \phantomsection
+    \addcontentsline{toc}{chapter}{References}
+    \bibliographystyle{plain}
+    \bibliography{} %Add your .bib file here.
+
+
+    % ---------------------------------------------------------------------- %
+    %
+    \appendix
+    %\chapter{}
+
+    % \printindex
+
+
+\end{document}
